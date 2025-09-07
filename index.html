@@ -15,7 +15,7 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            background: url('images/HerBirthday1.jpg') center/cover no-repeat;
+            background: url('images/HerBirthday1.jpg') center center / cover no-repeat;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -23,6 +23,12 @@
             align-items: center;
             overflow-x: hidden;
             position: relative;
+            background-attachment: fixed;
+        }
+        @media (max-width: 600px) {
+            body {
+                background-attachment: scroll;
+            }
         }
 
         .floating-balloons {
